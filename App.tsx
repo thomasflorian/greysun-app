@@ -1,11 +1,14 @@
 // React imports
 import React, { useEffect, useState } from "react";
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
 // Font + Icon imports
 import * as Font from "expo-font";
 import { Ionicons, MaterialCommunityIcons } from "@expo/vector-icons";
-
+// Import screens (temp?)
+import HomeScreen from "screens/Home";
+import ProfileScreen from "screens/Profile";
+import { Layout } from "constant";
 
 export default function App() {
   // State variables
@@ -32,13 +35,13 @@ export default function App() {
       });
   }, []);
 
+  console.log("Reload");
+
   // Wait for application to load before rendering
   let body = <View />;
   if (ready) {
     body = (
-      <View>
-        <Text style={{textAlign: "center"}}> Text is here! </Text>
-      </View>
+      <ProfileScreen />
     );
   }
 

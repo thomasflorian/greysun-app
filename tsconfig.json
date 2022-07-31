@@ -13,7 +13,8 @@
       "constant/*": ["app/constant/*"],
       "interfaces/*": ["app/interfaces/*"], 
       "navigation/*": ["app/navigation/*"], 
-      "style/*": ["app/style/*"], 
+      "styles/*": ["app/styles/*"], 
+      "screens/*": ["app/screens/*"], 
     }
   }
 }
