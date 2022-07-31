@@ -1,7 +1,19 @@
+
+// tsconfig.json
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "jsx": "react",
-    "strict": true
+    "strict": true,
+    // Path alias config
+    "baseUrl": ".",
+    "paths": {
+      // This needs to correspond to babel.config.js
+      "components/*": ["app/components/*"],
+      "constant/*": ["app/constant/*"],
+      "interfaces/*": ["app/interfaces/*"], 
+      "navigation/*": ["app/navigation/*"], 
+      "style/*": ["app/style/*"], 
+    }
   }
 }
